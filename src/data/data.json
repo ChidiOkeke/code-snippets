@@ -1,0 +1,13 @@
+[
+
+    {
+        "id" : 1,
+        "name" : "Snippet 1",
+        "code" : "<p>function square(number){</p><p>&nbsp; &nbsp;return number * number;</p>            <p>}</p>"
+    },
+    {
+        "id" : 2,
+        "name" : "Snippet 2",
+        "code" : "function log(x){cosole.log(x); }"
+    }
+]
