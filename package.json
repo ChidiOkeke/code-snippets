@@ -1,7 +1,7 @@
 {
   "name": "snippets",
   "version": "0.1.0",
-  "homepage": "https://ChidiOkeke.github.io/code-snippets",
+  "homepage": "https://chidiokeke.github.io/code-snippets",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
