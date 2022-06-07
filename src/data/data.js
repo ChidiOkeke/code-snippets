@@ -41,7 +41,7 @@ console.log(addArrays([2,3,4],[6,4,9],[34,6,4]))
 },
 {
     id : 5,
-    name : "Snippet 5",
+    name : "Snippet 4",
     category : "arrays",
     snippet: 
     
@@ -51,6 +51,33 @@ console.log(addArrays([2,3,4],[6,4,9],[34,6,4]))
     
 console.log(getCharFromString('zyxbwpl',5)) 
 // 'w'`
+},
+{
+    id : 6,
+    name : "Snippet 5",
+    category : "basic",
+    snippet:
+
+`function getBinaryFromDeciamSum(Dec1, Dec2) {
+    return ((Dec1 + Dec2) > 0) ? (Dec1 + Dec2).toString(2) : 'Error';
+}
+console.log(getBinaryFromDeciamSum(4,1))
+// 101`
+},
+{
+    id : 7,
+    name : "Snippet 5",
+    category : "array",
+    snippet:
+
+`function arrayDiff(array1, array2) {
+    const newArray = [];
+    array1.forEach((element) => {
+        !array2.includes(element) ? newArray.push(element) : false;
+    });
+return newArray;
+console.log(arrayDiff([1,2,2,2,3],[2]))
+// [1, 3]`
 }
 
 

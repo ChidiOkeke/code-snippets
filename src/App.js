@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 import {InputGroup, FormControl} from 'react-bootstrap';
 import Snippet from "./components/Snippet";
 import {data} from './data/data.js';
@@ -7,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  const [snippets, setSnippets] = useState(data);
+  const [snippets] = useState(data);
   const [query, setQuery] = useState("");
 
   //update query state based on input value
@@ -19,7 +20,7 @@ function App() {
       return <Snippet key={snippet.id} title={snippet.name} snippet={snippet.snippet}/>
   }
 
-  ///* filter snippets where query matches snippet and return snippets */
+  ///* filter snippets where query matches snippet and return snippets
   const filterSnippets = (snippets) => {
       return snippets.filter(snippets => snippets.snippet.toLowerCase().indexOf(query.toLowerCase()) > -1).map(mapSnippets);
   }
