@@ -19,30 +19,30 @@ function App() {
       return <Snippet key={snippet.id} title={snippet.name} snippet={snippet.snippet}/>
   }
 
-  ///* filter snippets where query matches snippet and return snippets */
+  // filter snippets where query matches snippet and return snippets
   const filterSnippets = (snippets) => {
       return snippets.filter(snippets => snippets.snippet.toLowerCase().indexOf(query.toLowerCase()) > -1).map(mapSnippets);
   }
 
   return (
       <div className="App">
+          <div className="container">
+                <h1 className="text-center">Snippets</h1>
 
-          <h1 className="text-center">Snippets</h1>
+                <div className="col-md-6 mx-auto">
+                  
+                  <InputGroup className="mb-3" onChange={handleSearch}>
+                      <FormControl
+                        placeholder="Search code snippets"
+                        aria-label="Search code snippets"
+                        aria-describedby="Search code snippets"
+                      />
+                  </InputGroup>
+                  
+                  {filterSnippets(snippets)}
 
-          <div className="col-md-6 mx-auto">
-            
-            <InputGroup className="mb-3" onChange={handleSearch}>
-                <FormControl
-                  placeholder="Search code snippets"
-                  aria-label="Search code snippets"
-                  aria-describedby="Search code snippets"
-                />
-            </InputGroup>
-            
-            
-            {filterSnippets(snippets)}
-          
-          </div>
+                </div>
+            </div>
         
       </div>
 
