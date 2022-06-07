@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {InputGroup, FormControl} from 'react-bootstrap';
 import Snippet from "./components/Snippet";
-import {data} from './data/data.jsx';
+import {data} from './data/data.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,7 +14,7 @@ function App() {
   const handleSearch = (event) => {
       setQuery(event.target.value);
   }
-  //map snippet data to component props
+  //map snippet data to component propss
   const mapSnippets = (snippet) => {
       return <Snippet key={snippet.id} title={snippet.name} snippet={snippet.snippet}/>
   }
